@@ -1,0 +1,61 @@
+    5  sudo apt-get update
+    7  sudo visudo
+   11  sudo apt-get install apache2
+   34  sudo nano /etc/php5/cli/php.ini 
+   35  sudo /etc/init.d/apache2 restart 
+
+   26  ls /var/www/paquito.fr/
+   27  /etc/init.d/apache2 start
+   28  sudo /etc/init.d/apache2 start
+   32  sudo apt-get install php5
+   33  sudo apt-get install mysql-server
+   34  sudo apt-get install mysql-client
+   35  sudo apt-get install curl 
+   36  curl -sS https://getcomposer.org/installer | php
+   37  sudo mv composer.phar /usr/local/bin/composer
+   39  sudo curl -LsS https://symfony.com/installer -o /usr/local/bin/symfony
+   40  sudo chmod a+x /usr/local/bin/symfony
+   48  sudo nano /etc/apache2/apache2.conf 
+   49  sudo a2dissite 000-default.conf 
+   50  sudo nano /etc/apache2/sites-available/paquito.fr.conf
+   51  sudo a2ensite paquito.fr.conf
+   52  /etc/init.d/apache2 restart
+   73  sudo apt-get install git 
+   74  git clone https://github.com/Mi5terfake/Paquito_server/
+   86  sudo chmod -R 777 /var/www/paquito.fr/YamlParser/
+
+   93  sudo nano /etc/apache2/apache2.conf 
+   94  sudo /etc/init.d/apache2 reload 
+   95  sudo /etc/init.d/mysql start 
+   96  sudo mysql_secure_installation 
+   97  sudo apt-get install phpmyadmin 
+   98  sudo nano /etc/apache2/apache2.conf 
+  100  sudo /etc/init.d/mysql start 
+  102  sudo /etc/init.d/apache2 restart 
+  114  sudo apt-get install php-symfony
+  115  sudo apt-get install php-symfony-framework-bundle 
+  116  sudo apt-get install php-pear 
+  117  sudo apt-get install php5-cli 
+  118  sudo apt-get install php5-xsl 
+  119  sudo pear channel-discover pear.symfony-project.com
+  120  sudo pear installation symfony/symfony
+  121  sudo pear install symfony/symfony
+  123  sudo pear install --alldeps phing/phing
+  124  sudo pear channel-discover pear.phing.info
+  125  sudo pear install --alldeps phing/phing
+  126  symfony 
+  141  sudo nano /etc/hosts
+  142  sudo nano /etc/apache2/sites-available/paquito.fr.conf 
+  143  sudo a2ensite paquito.fr.conf 
+  144  sudo /etc/init.d/apache2 restart 
+  145  sudo nano /etc/apache2/sites-available/paquito.fr.conf 
+  146  sudo /etc/init.d/apache2 restart 
+  147  sudo nano /etc/hosts
+
+  155  composer update
+
+  169  symfony new YamlParser
+  173  cd YamlParser/
+  174  sudo symfony generate:project YamlParser --orm=Propel
+  175  ls web/
+  181  php bin/console server:run
