@@ -1,0 +1,85 @@
+    1  ls
+    2  sudo ./VBo
+    3  fds
+    4  fsd
+    5  fds
+    6  ls -l 
+    7  sudo VBoxLinuxAdditions.run
+    8  sudo ./VBoxLinuxAdditions.run
+    9  sudo ./VBoxLinuxAdditions.run
+   10  sudo ./runasroot.sh
+   11  su 
+   12  history 
+   13  su
+   14  sudo apt-get update 
+   15  su 
+   16  sudo apt-get update 
+   17  man visudo 
+   18  cat /etc/sudoers >> sudoers
+   19  sudo cat /etc/sudoers >> sudoers
+   20  ls -l
+   21  man apt-get
+   22  sudo apt-get install -y fdisk dkms
+   23  sudo apt-get install -y dkms
+   24  sudo apt-get install -y build-essential module-assistant 
+   25  m-a prepare
+   26  sudo m-a prepare
+   27  mount /media/cdrom
+   28  sh /media/cdrom/VBoxLinuxAdditions.run
+   29  sudo sh /media/cdrom/VBoxLinuxAdditions.run
+   30  sudo apt-get install -y apache2 php5 git mysql-client mysql-server curl phpmyadmin php-symfony-framework-bundle php-pear php5-cli php5-xsl 
+   31  ps
+   32  top
+   33  sudo apt-get install -y apache2 php5 git mysql-client mysql-server curl phpmyadmin php-symfony-framework-bundle php-pear php5-cli php5-xsl 
+   34  sudo rm  /var/lib/dpkg/lock
+   35  sudo apt-get install -y apache2 php5 git mysql-client mysql-server curl phpmyadmin php-symfony-framework-bundle php-pear php5-cli php5-xsl 
+   36  sudo rm /var/cache/apt/archives/lock 
+   37  sudo apt-get install -y apache2 php5 git mysql-client mysql-server curl phpmyadmin php-symfony-framework-bundle php-pear php5-cli php5-xsl 
+   38  git clone https://github.com/Mi5terfake/Paquito_server.git
+   39  git config user.name LucasR
+   40  ls
+   41  cd Paquito_server/
+   42  git config user.name LucasR
+   43  git config user.email lucas.robin.p13@gmail.com
+   44  ls
+   45  ls -l
+   46  cd Installation/
+   47  ls -l
+   48  cp etc/apache2/apache2.conf /etc/apache2/apache2.conf 
+   49  sudo cp etc/apache2/apache2.conf /etc/apache2/apache2.conf 
+   50  sudo cp etc/apache2/sites-available/paquito.fr.conf /etc/apache2/sites-available/paquito.fr.conf
+   51  sudo cp etc/hosts /etc/hosts
+   52  sudo a2dissite 000-default.conf 
+   53  /etc/init.d/apache2 restart 
+   54  sduo /etc/init.d/apache2 restart 
+   55  sudo /etc/init.d/apache2 restart 
+   56  sudo a2ensite paquito.fr.conf 
+   57  sudo /etc/init.d/apache2 restart 
+   58  sudo nano /etc/apache2/apache2.conf 
+   59  sudo nano /etc/apache2/sites-available/paquito.fr.conf 
+   60  cd ../..
+   61  ls -l
+   62  cd Paquito_server/
+   63  ls -l 
+   64  cd YamlParser/
+   65  sudo pear channel-discover pear.symfony-project.com
+   66  sudo pear installation symfony/symfony
+   67  sudo pear install symfony/symfony
+   68  php bin/console server:run
+   69  composer update
+   70  ms
+   71  ls
+   72  curl -sS https://getcomposer.org/installer | php
+   73  php composer.phar 
+   74  composer update
+   75  sudo mv composer.phar /usr/local/bin/composer
+   76  composer update
+   77  ls -l 
+   78  nano app/config/config.yml 
+   79  nano app/config/parameters.yml 
+   80  composer update
+   81  php bin/console server:run
+   82  nano app/config/parameters.yml 
+   83  composer update
+   84  php bin/console server:run
+   85  history >> historique.txt
