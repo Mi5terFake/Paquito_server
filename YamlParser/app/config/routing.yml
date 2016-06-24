@@ -1,28 +1,1 @@
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
-
-user_registration:
-    path: /register/
-    defaults: { _controller: AppBundle:Registration:register }
-
-login:
-    path: /login/
-    defaults: { _controller: AppBundle:Authentication:login}
-
-login_check:
-    path: /login_check
-
-user_project:
-    path: /project/new/
-    defaults: { _controller: AppBundle:Project:new }
-
-show_project:
-    path: /project/viewDetails/{id}
-    defaults: { _controller: AppBundle:Project:viewDetails}
-    requirements:
-        id:  \d+
-
-parse_project:
-    path: /project/parse/
-    defaults: { _controller: AppBundle:Project:parseFile }
+app:    resource: "@AppBundle/Controller/"    type:     annotationhomepage:    path: /{page}    defaults:        _controller: AppBundle:Accueil:index        page:        1    requirements:        page: \d*user_registration:    path: /register/    defaults: { _controller: AppBundle:Inscription:register}login:    path: /login/    defaults: { _controller: AppBundle:Authentication:login}login_check:    path: /login_checkuser_project:    path: /project/new/    defaults: { _controller: AppBundle:Project:new}show_project:    path: /project/viewDetails/{id}    defaults: { _controller: AppBundle:Project:viewDetails}    requirements:        id:  \d+parse_project:    path: /project/parse/    defaults: { _controller: AppBundle:Project:parseFile}charge_fic:    path:    /project/importer/    defaults: { _controller: AppBundle:Project:chargeFichier}
