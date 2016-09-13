@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+		<meta charset="ISO-8859-1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+		<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+		
+		<script src="bootstrap/dist/js/jquery.min.js"></script>
+		<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="paquito-formulaire.js"></script>
+		<link rel="stylesheet" href="paquito-formulaire.css">
+
+    </head>
+
+	<body>
+		<div class="jumbotron">
+		  <h1>Paquito</h1>
+		</div>
+		<div class="tabpanel">
+			<div id="menuBar">
+				<ul class="nav nav-tabs">
+					<li role="presentation" class="active"><a data-toggle="tab" href="#onglet-ajout">Ajout d'un projet</a></li>
+					<li role="presentation" ><a data-toggle="tab" href="#onglet-telechargement" >Telechargement d'un projet</a></li>
+				</ul>
+			</div>
+			<div class="tab-content panel panel-default">
+				<div id="onglet-ajout" class="tab-pane fade in active">
+						<div class ="col-md-6" id="choix_import">
+							<label> Choix d'ajout du projet : </label>
+							<div class="radio-inline">
+							  <label>
+								<input type="radio" name="inlineRadioOptions" id="formulaire" value="formulaire" checked>
+								Utilisation du formulaire 
+							  </label>
+							</div>
+							<div class="radio-inline">
+							  <label>
+								<input type="radio" name="inlineRadioOptions" id="yaml" value="yaml">
+								Import a partir d'un fichier YAML existant
+							  </label>
+							</div>
+
+						</div>
+						
+					<div id='formulaire_ajout'>	
+						<div class ="col-md-12">
+								<div class ="col-md-6">
+									<div class="input-group" id='nom_version'>
+										<span class="input-group-addon">Nom du projet</span>
+										<input id="nom" type="text" class="form-control inputAjout" placeholder="Nom du projet" >
+									</div>
+									<div class="input-group">
+										<span class="input-group-addon">Version</span>
+										<input id="version" type="text" class="form-control inputAjout" placeholder="Version du projet" >
+									</div>
+								</div>
+								<div class ="col-md-6">
+									<div class="input-group">
+										<span class="input-group-addon">Dependance(s)</span>
+										<textarea rows="4" wrap="hard" id="dependance" class="form-control inputAjout" placeholder="Dependances"></textarea>
+									</div>
+								</div>
+						</div>
+						<div class ="col-md-12">
+								<div class ="col-md-6">
+									<div class="input-group">
+										<span class="input-group-addon">Auteur(s)</span>
+										<textarea rows="4" wrap="hard" id="auteur" class="form-control inputAjout" placeholder=" nom des auteurs"></textarea>
+									</div>
+								</div>
+								<div class ="col-md-6">
+									<div class="input-group">
+										<span class="input-group-addon">Mainteneur(s)</span>
+										<textarea rows="4" wrap="hard" id="mainteneur" class="form-control inputAjout" placeholder="Nom et adresse des mainteneurs"></textarea>
+									</div>
+								</div>
+						</div>
+						<div class ="col-md-12">
+								<div class ="col-md-6">
+									<div class="input-group">
+										<span class="input-group-addon">Description(s)</span>
+										<textarea rows="4" wrap="hard" id="description" class="form-control inputAjout" placeholder="Description"></textarea>
+									</div>
+								</div>
+								<div class ="col-md-6">
+									<div class="input-group">
+										<span class="input-group-addon">Fichier(s)</span>
+										<textarea rows="4" wrap="hard" id="fichier" class="form-control inputAjout" placeholder="Nom des fichiers"></textarea>
+									</div>
+								</div>
+						</div>
+						<div class="col-md-offset-10 col-md-2">
+								<a class="btn btn-default inputAjout" id="valider_info">Valider les informations</a>
+						</div>
+					</div>
+					<div id='ajout_yaml' >
+						
+						<div class ="col-md-12">
+								<div class ="col-md-6">
+									<div class="input-group">
+										<span class="input-group-addon">Liens vers fichier YAML</span>
+										<input id="lien_yaml" type="text" class="form-control inputYaml" placeholder="Liens vers fichier YAML" >
+									</div>
+								</div>
+						</div>
+						<div class ="col-md-12" >
+								<div class ="col-md-offset-4 col-md-2">
+									<div class="input-group">
+										<a class="btn btn-default inputYaml" id="import_yaml">Ajouter fichier YAML</a>
+									</div>
+								</div>
+						</div>
+					</div>
+					
+				</div>
+
+				<div id="onglet-telechargement" class="tab-pane fade">
+					<div id="divTableTelechargement">
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

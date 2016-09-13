@@ -1,0 +1,28 @@
+#nom_version
+{
+	margin-bottom: 10px;
+}
+.col-md-12, #valider_info, #choix_import
+{
+	margin-top: 10px;
+}
+.input-group
+{
+	width:100%;
+}
+span
+{
+	max-width : 173px !important;
+	width : 173px !important;
+}
+.jumbotron
+{
+	text-align : center;
+}
+.nav.nav-tabs a {
+    color: black;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover
+{
+	background-color : #EEE;
+}

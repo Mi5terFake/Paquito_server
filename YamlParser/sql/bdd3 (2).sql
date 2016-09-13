@@ -15,7 +15,7 @@ USE `mydb` ;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`yaml` (
   `id_yaml` INT NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(45) NULL,
+  `name` VARCHAR(45) NOT NULL,
   `version` INT NOT NULL,
   `homepage` VARCHAR(45) NULL,
   `summary` VARCHAR(128) NULL,

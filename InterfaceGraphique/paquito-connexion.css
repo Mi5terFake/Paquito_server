@@ -1,0 +1,24 @@
+.col-md-12
+{
+	margin-top: 10px;
+}
+.input-group
+{
+	width:100%;
+	margin-top: 10px;
+}
+span
+{
+	max-width : 110px !important;
+	width : 110px !important;
+}
+.jumbotron
+{
+	text-align : center;
+}
+
+#connexion, #inscription
+{
+	float : right;
+	margin-top: 5px;
+}
